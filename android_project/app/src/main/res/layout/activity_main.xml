@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/screen"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo_bg"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+
+
+    <!-- ROBOTIC ARM Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="32dp"
+        android:paddingHorizontal="32dp"
+        android:background="@color/screen">
+        <TextView
+            android:id="@+id/robot_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROBOTIC ARM"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@color/screen" />
+        <TextView
+            android:id="@+id/base_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BASE"
+            android:textSize="11sp"
+            android:textColor="#ffffff"
+            android:background="@color/screen" />
+        <SeekBar
+            android:id="@+id/base_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:max="255"
+            android:progress="0"
+            android:thumb="@drawable/custom_seekbar_thumb"/>
+        <TextView
+            android:id="@+id/elbow_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELBOW"
+            android:textSize="11sp"
+            android:textColor="#ffffff"
+            android:background="@color/screen" />
+        <SeekBar
+            android:id="@+id/elbow_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:max="255"
+            android:progress="0"
+            android:thumb="@drawable/custom_seekbar_thumb"/>
+    </LinearLayout>
+
+
+
+    <!-- CAR Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="32dp"
+        android:paddingHorizontal="32dp"
+        android:background="@color/screen">
+        <TextView
+            android:id="@+id/car_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAR"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@color/screen" />
+        <ImageButton
+            android:id="@+id/ForwardButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/forward"
+            android:contentDescription="Forward"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:background="@drawable/image_button_bg"
+            />
+        <SeekBar
+            android:id="@+id/car_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:max="1023"
+            android:progress="500"
+            android:thumb="@drawable/custom_seekbar_thumb"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:background="@color/screen">
+        <ImageButton
+            android:id="@+id/leftButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/left"
+            android:contentDescription="Backward"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:background="@drawable/image_button_bg" />
+            <ImageButton
+                android:id="@+id/BackwardButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/backward"
+                android:contentDescription="Backward"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@drawable/image_button_bg" />
+            <ImageButton
+                android:id="@+id/rightButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/right"
+                android:contentDescription="Backward"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@drawable/image_button_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!-- PUMP Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="32dp"
+        android:paddingHorizontal="32dp"
+        android:background="@color/screen">
+        <TextView
+            android:id="@+id/pump_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PUMP"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@color/screen" />
+        <SeekBar
+            android:id="@+id/pump_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:max="1023"
+            android:thumb="@drawable/custom_seekbar_thumb"
+            android:progress="0" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
