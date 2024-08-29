@@ -13,5 +13,8 @@ A compact vehicle with a water pump that can be remotely controlled via a mobile
   - Wi-Fi: Facilitates communication between the Android app and the ESP32 microcontroller.
 
 
-<img src="saf.jpg" alt="Screenshot" height="500"/>
-<img src="safbot.png" alt="Screenshot"/>
+<div style="display: flex; align-items: center;">
+  <img src="saf.jpg" alt="Screenshot" height="500" style="margin-right: 10px;"/>
+  <img src="safbot.png" alt="Screenshot" height="500"/>
+</div>
+
