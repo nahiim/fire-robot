@@ -14,3 +14,4 @@ A compact vehicle with a water pump that can be remotely controlled via a mobile
 
 
 <img src="saf.jpg" alt="Screenshot" height="500"/>
+<img src="safbot.png" alt="Screenshot"/>
