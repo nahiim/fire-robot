@@ -16,8 +16,12 @@ A compact vehicle with a water pump that can be remotely controlled via a mobile
 <div style="display: flex; align-items: center;">
   <img src="saf.jpg" alt="Screenshot" height="500" style="margin-right: 10px;"/>
   <img src="safbot.png" alt="Screenshot" height="500"/>
+  
+  <video src="robot_car.mp4" autoplay loop muted playsinline style="max-width: 100%; height: 500;">
+  Your browser does not support the video tag.
+  </video>
+
 </div>
 
-[Watch the video](robot_car.mp4)
 
 
